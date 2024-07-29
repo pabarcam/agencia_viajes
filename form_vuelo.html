@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Vuelo</title>
+    <script src="validar_vuelo.js"></script>
+</head>
+<body>
+    <h2>Agregar Vuelo</h2>
+    <form name="formVuelo" action="insertar_vuelo.php" onsubmit="return validarFormularioVuelo()" method="post">
+        Origen: <input type="text" name="origen"><br>
+        Destino: <input type="text" name="destino"><br>
+        Fecha: <input type="date" name="fecha"><br>
+        Plazas Disponibles: <input type="number" name="plazas_disponibles"><br>
+        Precio: <input type="text" name="precio"><br>
+        <input type="submit" value="Agregar Vuelo">
+    </form>
+</body>
+</html>

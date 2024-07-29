@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Hotel</title>
+    <script src="validar_hotel.js"></script>
+</head>
+<body>
+    <h2>Agregar Hotel</h2>
+    <form name="formHotel" action="insertar_hotel.php" onsubmit="return validarFormularioHotel()" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Ubicación: <input type="text" name="ubicacion"><br>
+        Habitaciones Disponibles: <input type="number" name="habitaciones_disponibles"><br>
+        Tarifa por Noche: <input type="text" name="tarifa_noche"><br>
+        <input type="submit" value="Agregar Hotel">
+    </form>
+</body>
+</html>
